@@ -1,0 +1,39 @@
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url("background.jpg");
+    width:1920px;
+    height:1080px;
+    background-size: cover;
+    background-color:#cccccc;
+    overflow:hidden;
+}
+.planet img{
+   
+
+    height: 160px;
+    width: 160px;
+}
+.container{
+    border:10px solid gray;
+    max-width: 700px;
+    width:1400px;
+    height:98vh;
+    
+    
+    
+    background-color:rgba(0.89, 0.89, 0.89, 0.8);
+    
+    
+}
+#box2{
+    
+    
+    margin:0px;
+    background-image:url("background.jpg");
+    border:2px solid gray;
+    height:160px;
+    width:160px;
+    
+}
