@@ -1,0 +1,30 @@
+body {
+    background-image:url("background.jpg");
+    width:1920px;
+    height:1080px;
+    background-size: cover;
+    background-color:#cccccc;
+    overflow:hidden;
+}
+
+.planet img{
+    position: relative;
+    right: -150px;
+    height: 100px;
+    width: 100px;
+    transition: transform 330ms ease-in-out;
+}
+.planet .pLight{
+    position: absolute;
+    opacity:1;
+    transition: opacity 700ms ease-in, transform 330ms ease-in-out, opacity 700ms ease-out;
+    
+}
+.planet:hover {
+    transform: scale(1.2);
+}
+.planet:hover .pLight{
+    opacity:1;
+    transform: scale(1.2);
+
+}
