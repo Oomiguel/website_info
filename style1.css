@@ -1,39 +1,57 @@
+/* Fundalul */
 body {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-image:url("background.jpg");
-    width:1920px;
-    height:1080px;
+    background: url(background.jpg) no-repeat center center fixed;
     background-size: cover;
-    background-color:#cccccc;
-    overflow:hidden;
+    height: 100%;
+    width: 100%;
 }
-.planet img{
-   
 
-    height: 160px;
-    width: 160px;
+/* Baza paginii. Efectiv dreptunghiul mare in care e pus tot. */
+.container {
+    border-radius: 35px;
+    border: 10px solid gray;
+    width: 50%;
+    margin: auto;
+    height: 1000px;
+    background-color: rgba(0.89, 0.89, 0.89, 0.8);
 }
-.container{
-    border:10px solid gray;
-    max-width: 700px;
-    width:1400px;
-    height:98vh;
-    
-    
-    
-    background-color:rgba(0.89, 0.89, 0.89, 0.8);
-    
-    
+
+/* Titlul. */
+.container .title {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
 }
-#box2{
-    
-    
-    margin:0px;
-    background-image:url("background.jpg");
-    border:2px solid gray;
-    height:160px;
-    width:160px;
-    
+
+/* Tot textul din pagina */
+.container .content {
+    color: white;
+    font-size: 19px;
 }
+
+/* Imaginea de pe pagina cu planeta. Float: left ca sa ocoleasca textul imaginea.*/
+.container .example-image {
+
+    float: left;
+    margin: 0 1em 1em 0;
+    display: block;
+    border: 5px solid gray;
+    border-radius: 20px;
+}
+
+/* Container-ul care tine imaginea de exemplu si textul de exemplu*/
+.container .example {
+    position: relative;
+}
+
+/* Textul de exemplu. Detalii despre poza, in general */
+.container .example-notes {
+    position: absolute;
+    color: white;
+    top: 230px;
+    left: 15px;
+}
+
+/*border-radius da efectul de colturi rotunjite btw :P*/
+/*nota: nu folosi valori concrete. Lucreaza cu procentaje. E mai usor si nu se distruge pagina cand schimbi dimensiunea paginii. Valori concrete in general merg doar cand folosesti position:absolute.*/
