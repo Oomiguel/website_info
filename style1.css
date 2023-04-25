@@ -6,6 +6,11 @@ body {
     width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color:yellow;
+}
+
 /* Baza paginii. Efectiv dreptunghiul mare in care e pus tot. */
 .container {
     border-radius: 35px;
@@ -57,5 +62,5 @@ body {
 /*border-radius da efectul de colturi rotunjite btw :P*/
 /*nota: nu folosi valori concrete. Lucreaza cu procentaje. E mai usor si nu se distruge pagina cand schimbi dimensiunea paginii. Valori concrete in general merg doar cand folosesti position:absolute.*/
 .contents{
-    color:yellow;
+    
 }
