@@ -1,14 +1,11 @@
+/*Bibliografie:1.(Earth)https://en.wikipedia.org/wiki/Earth#See_also*/
 /* Fundalul */
 body {
     background: url(background.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
     width: 100%;
-}
 
-a{
-    text-decoration: none;
-    color:yellow;
 }
 
 /* Baza paginii. Efectiv dreptunghiul mare in care e pus tot. */
@@ -61,6 +58,20 @@ a{
 
 /*border-radius da efectul de colturi rotunjite btw :P*/
 /*nota: nu folosi valori concrete. Lucreaza cu procentaje. E mai usor si nu se distruge pagina cand schimbi dimensiunea paginii. Valori concrete in general merg doar cand folosesti position:absolute.*/
-.contents{
+a{
+    text-decoration: none;
+    color:yellow;
+}
+#box{
+    background-color: rgba(1, 1, 1, 0.8);
+    border-radius: 3px;
+    border: 10px solid gray;
+    width: 50%;
+    max-width: 150px;
+    position:absolute;
+    right:-77%;
+    left:77%;
+    
+    
     
 }
