@@ -1,6 +1,6 @@
 /* background care se roteste  & infobox changes on hover */
 body {
-    background: url(background.jpg) no-repeat center center fixed;
+    background: url(../images/background.jpg) no-repeat center center fixed;
     background-size: cover;
     overflow: hidden;
     height: 100%;
