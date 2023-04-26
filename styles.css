@@ -1,3 +1,4 @@
+/* background care se roteste  & infobox changes on hover */
 body {
     background: url(background.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -45,7 +46,7 @@ a {
 
 .button .left,
 .button .right {
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 40px;
     position: relative;
     display: block;
@@ -71,7 +72,7 @@ a {
 }
 
 img {
-    border-radius: 50%;
+    border-radius:50%;
 }
 
 .planet .pBody {
@@ -233,3 +234,166 @@ img {
     top: 65%;
     left: -17%;
 }
+
+/*Galaxies in general*/
+.galaxy .gFull{
+    position:relative;
+}
+
+.galaxy .gLight{
+    opacity:0;
+    transition: opacity 700ms ease-in, transform 330ms ease-in-out, opacity 700ms ease-out;
+}
+
+.gFull:hover .gSubtitle,
+.gFull:hover .gBody{
+    transform:scale(1.2);
+}
+
+.gFull:hover .gLight {
+    transform:scale(1.2);
+    opacity:1;
+}
+
+.galaxy .gSubtitle{
+    font-weight: bold;
+    font-size: large;
+    position: absolute;
+    color:white;
+}
+
+
+.galaxy .gBody,
+.galaxy .gSubtitle{
+    transition: transform 330ms ease-in-out;
+}
+
+/*Milky Way*/
+
+.milky .gFull{
+    position:absolute;
+    left:35%;
+    top:35%;
+}
+
+.milky .gBody {
+    height: 178px;
+    width: 315px;
+}
+
+.milky .gSubtitle{
+    left:90px;    
+}
+
+/* Andromeda */
+
+.andromeda .gBody{
+    height: 240px;
+    width: 322px;
+}
+
+.andromeda .gSubtitle{
+    left:55px;
+}
+
+.andromeda .gFull{
+    position:absolute;
+    left:65%;
+    top:35%;
+}
+
+/* Pinwheel */
+.pinwheel .gBody{
+    height:250px;
+    width:250px;
+}
+
+.pinwheel .gSubtitle{
+    left:45px;
+    top:230px;
+}
+
+.pinwheel .gFull{
+    position: absolute;
+    left:9%;
+    top:55%;
+}
+
+/* NGC1300 */
+.NGC1300 .gBody{
+    height:125px;
+    width:250px;
+}
+
+.NGC1300 .gSubtitle{
+    left:90px;
+}
+
+.NGC1300 .gFull{
+    position:absolute;
+    left:40%;
+    top:10%;
+}
+
+/* Hoag's Object */
+.hoag .gBody{
+    height:200px;
+    width:200px;
+}
+
+.hoag .gSubtitle{
+    left:50px;
+}
+
+.hoag .gFull{
+    position:absolute;
+    left:30%;
+    top:68%;
+}
+
+/* Sombrero Galaxy */
+.sombrero .gBody{
+    height:200px;
+    width:300px;
+}
+
+.sombrero .gSubtitle{
+    left:50px;
+}
+
+.sombrero .gFull{
+    position:absolute;
+    left:75%;
+    top:5%;
+}
+
+/* The Corona Borealis */
+.borealis .gBody,
+.borealis .gLight{
+    position:absolute;
+    height:400px;
+    width:400px;
+}
+
+.borealis .gSubtitle{
+    left:78px;
+    top:338px;
+    width:250px;
+}
+
+.borealis .gFull{
+    position:absolute;
+    left:22%;
+    top:10%;
+}
+
+
+@keyframes move_pulamea{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
