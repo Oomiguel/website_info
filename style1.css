@@ -58,7 +58,7 @@ body {
 
 /*border-radius da efectul de colturi rotunjite btw :P*/
 /*nota: nu folosi valori concrete. Lucreaza cu procentaje. E mai usor si nu se distruge pagina cand schimbi dimensiunea paginii. Valori concrete in general merg doar cand folosesti position:absolute.*/
-a{
+.abu a{
     text-decoration: none;
     color:yellow;
 }
@@ -66,12 +66,33 @@ a{
     background-color: rgba(1, 1, 1, 0.8);
     border-radius: 3px;
     border: 10px solid gray;
-    width: 50%;
-    max-width: 150px;
+    width: 20%;
     position:absolute;
     right:-77%;
     left:77%;
     
     
     
+}
+.button .left {
+    margin-right: 7%;
+}
+.button .left {
+    border-radius: 20px;
+    font-size: 40px;
+    position: relative;
+    display: block;
+    background-color: rgb(145, 145, 145);
+    position: fixed;
+    text-align: center;
+    width: 2%;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 2%;
+    padding: 10px;
+    transition: transform 330ms ease-in-out;
+}
+
+#backButton{
+    color: black;
 }
