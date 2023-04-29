@@ -7,6 +7,18 @@ body {
     width: 100%;
 }
 
+.background{
+    content:"";
+    position:absolute;
+    width:200%;
+    height:200%;
+    top:-50%;
+    left:-50%;
+    z-index:-1;
+    background: url(../images/background.jpg) 0 0 repeat;
+    animation: rotate 300s infinite;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -231,8 +243,8 @@ img {
 
 /*Sun*/
 .sun {
-    top: 65%;
-    left: -17%;
+    top: 66%;
+    left: -19%;
 }
 
 /*Galaxies in general*/
@@ -445,7 +457,7 @@ img {
 }
 
 
-@keyframes move_pulamea{
+@keyframes rotate{
     from{
         transform:rotate(0deg);
     }
