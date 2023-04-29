@@ -1,4 +1,6 @@
-/* background care se roteste  & infobox changes on hover */
+body{
+    overflow:hidden; /* Disables scroll */
+}
 
 .background{
     content:"";
