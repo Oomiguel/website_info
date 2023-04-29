@@ -387,6 +387,63 @@ img {
     top:10%;
 }
 
+/* Omega Centauri */
+.omega_centauri .gBody{
+    position:absolute;
+    height:250px;
+    width:250px;
+}
+
+.omega_centauri .gSubtitle{
+    left:50px;
+    top:250px;
+    width:200px;
+}
+
+.omega_centauri .gFull{
+    position:absolute;
+    left:10%;
+    top:60%;
+}
+
+/* Bootes Void */
+.bootes_void .gBody{
+    position:absolute;
+    height:300px;
+    width:300px;
+}
+
+.bootes_void .gSubtitle{
+    left:80px;
+    top:300px;
+    width:200px;
+}
+
+.bootes_void .gFull{
+    position:absolute;
+    left:70%;
+    top:20%;
+}
+
+/* Black Holes */
+.black_holes .gBody{
+    position:absolute;
+    height:200px;
+    width:350px;
+}
+
+.black_holes .gSubtitle{
+    left:120px;
+    width:100px; 
+    top:190px;
+}
+
+.black_holes .gFull{
+    position:absolute;
+    left:45%;
+    top:60%;
+}
+
 
 @keyframes move_pulamea{
     from{
