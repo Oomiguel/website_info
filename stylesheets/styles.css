@@ -73,13 +73,12 @@ a {
     transform: scale(1.2);
 }
 
+img {
+    border-radius:50%;
+}
 /*Planets in general*/
 .planet {
     position: absolute;
-}
-
-img {
-    border-radius:50%;
 }
 
 .planet .pBody {
@@ -247,19 +246,9 @@ img {
     position:relative;
 }
 
-.galaxy .gLight{
-    opacity:0;
-    transition: opacity 700ms ease-in, transform 330ms ease-in-out, opacity 700ms ease-out;
-}
-
 .gFull:hover .gSubtitle,
 .gFull:hover .gBody{
     transform:scale(1.2);
-}
-
-.gFull:hover .gLight {
-    transform:scale(1.2);
-    opacity:1;
 }
 
 .galaxy .gSubtitle{
@@ -376,8 +365,7 @@ img {
 }
 
 /* The Corona Borealis */
-.borealis .gBody,
-.borealis .gLight{
+.borealis .gBody{
     position:absolute;
     height:400px;
     width:400px;
